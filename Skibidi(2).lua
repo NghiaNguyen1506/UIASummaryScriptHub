@@ -11,7 +11,7 @@ ImageButton.BorderSizePixel = 0
 ImageButton.Position = UDim2.new(0.10615778, 0, 0.16217947, 0)
 ImageButton.Size = UDim2.new(0, 40, 0, 40)
 ImageButton.Draggable = true
-ImageButton.Image = "http://www.roblox.com/asset/?id=83190276951914"
+ImageButton.Image = "http://www.roblox.com/asset/?id=129494926958468"
 
 UICorner.CornerRadius = UDim.new(1, 10) 
 UICorner.Parent = ImageButton
@@ -23,7 +23,7 @@ end)
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 repeat wait() until game:IsLoaded()
 local Window = Fluent:CreateWindow({
-    Title = "UIA hub Summary Script",
+    Title = "UIA Roblox Summary Script",
     SubTitle = "Blox Fruit",
     TabWidth = 157,
     Size = UDim2.fromOffset(720, 450),
@@ -33,66 +33,51 @@ local Window = Fluent:CreateWindow({
 })
 local Tabs = {
         Main0=Window:AddTab({ Title="Information" }),
-        Main1=Window:AddTab({ Title="Script UIA hub (our script)" }),
-        Main2=Window:AddTab({ Title="Script Greenz" }),
-        Main3=Window:AddTab({ Title="Script Redz hub" }),
-        Main4=Window:AddTab({ Title="Script Kaitun (need key)" }),
-        Main5=Window:AddTab({ Title="Script Kaitun (maybe can't use)" }),
-        Main6=Window:AddTab({ Title="Script (comming soon)" }),
-        Main7=Window:AddTab({ Title="Script (comming soon)" }),
-        Main8=Window:AddTab({ Title="Script (comming soon)" }),
-        Main9=Window:AddTab({ Title="Script (comming soon)" }),
+        Main1=Window:AddTab({ Title="Script Farm" }),
+        Main2=Window:AddTab({ Title="Script Events" }),
+        Main3=Window:AddTab({ Title="Script Kaitun" }),
+        Main4=Window:AddTab({ Title="Script Hop Servers" }),
+        Main5=Window:AddTab({ Title="Script PvP" }),
+        Main6=Window:AddTab({ Title="Script Paid" }),
+        Main7=Window:AddTab({ Title="Script Tiếng Việt" }),
+        Main8=Window:AddTab({ Title="Misc Script" }),
+        Main9=Window:AddTab({ Title="Script Fix Lag" }),
+        Main9=Window:AddTab({ Title="Our Script" }),
 }
     Tabs.Main0:AddButton({
     Title = "UIA Roblox Community",
     Description = "Discord",
     Callback = function()
-        setclipboard("https://discord.gg/ZpSe7Za6ze")
+        setclipboard("https://discord.gg/B3VP9qPCeX")
     end
 })
 
     Tabs.Main0:AddButton({
-    Title = "UIA Roblox script",
-    Description = "script",
+    Title = "UIA Roblox Channel",
+    Description = "Youtube",
     Callback = function()
-        setclipboard("loadstring(game:HttpGet("https://raw.githubusercontent.com/minh23102011/UIA_hub/refs/heads/main/UIA_hub"))()")
+        setclipboard("XD")
     end
 })
 
     Tabs.Main0:AddButton({
-    Title = "Script Developer Roblox Account 1",
-    Description = "GG_Nghia150612",
+    Title = "Mobile Executor Supported : ",
+    Description = "DeltaX : ✅   CodeX : ✅  KRNL : ✅   ArceusX : ✅    Fluxus : ✅    Ronix : ✅  Trigon : ✅",
     Callback = function()
-        setclipboard("https://www.roblox.com/users/4301671753/profile")
+        setclipboard("XD")
     end
 })
 
     Tabs.Main0:AddButton({
-    Title = "Script Developer Roblox Account 2",
-    Description = "DMINH",
+    Title = "UIA Roblox Group",
+    Description = "Roblox Group",
     Callback = function()
-        setclipboard("https://discord.gg/ZpSe7Za6ze")
+        setclipboard("XD")
     end
 })
 
     
     Tabs.Main1:AddButton({
-    Title="UIA Hub",
-    Description="",
-    Callback=function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/minh23102011/UIA_hub/refs/heads/main/UIA_hub"))()
-})
-
-
-    Tabs.Main2:AddButton({
-    Title="GreenZ Hub",
-    Description="",
-    Callback=function()
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaAnarchist/GreenZ-Hub/refs/heads/main/KaitunDoughKing.lua"))()
-  end
-})
-
-    Tabs.Main3:AddButton({
     Title="Redz Hub",
     Description="",
     Callback=function()
@@ -105,79 +90,10 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/newredz/BloxFruits/re
   end
 })
 
-    Tabs.Main4:AddButton({
-    Title="xQuartyx",
+Tabs.Main1:AddButton({
+    Title="GreenZ Hub",
     Description="",
     Callback=function()
-	  getgenv().Mode = "OneClick"
-	  getgenv().Setting = {
-	      ["Team"] = "Marines", -- Options "Pirates", "Marines"
-	      ["FucusOnLevel"] = true,
-	      ["Fruits"] = {  -- setting for fruits u want
- 	         ["Primary"] = { -- if current fruit is not in this list, eat/buy
- 	             "Dragon-Dragon",
- 	             -- u can configs add mores/remove and must end with , (comma symbol)
- 	         },
- 	         ["Normal"] = { -- it just a normal fruit list
- 	             "Dragon-Dragon",
-  	            -- u can configs add mores/remove and must end with , (comma symbol)
-  	        }
- 	         -- run this for get all fruit name `local t={};for _,v in pairs(game.ReplicatedStorage.Remotes.CommF_:InvokeServer("GetFruits"))do table.insert(t,`"{v.Name}"`)end;setclipboard(table.concat(t, "\n"))`
- 	     },
-	      ["IdleCheck"] = 150, -- every (x) seconds if not moving rejoin
-	  };
-	  
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/xQuartyx/QuartyzScript/main/Loader.lua"))()
-  end
-})
-
-    Tabs.Main2:AddButton({
-    Title="Sipm kaitun",
-    Description="",
-    Callback=function()
-	  getgenv().simple_settings = {
- 	     ["MASTERY"] = { -- Settings related to leveling up weapon or skill mastery
- 	         ["ACTIVE"] = true, -- Enable or disable mastery leveling (true = enabled, false = disabled)
-  	        ["METHOD"] = "Half", -- Method for gaining mastery, "Half"[350] or "Full"[600]
- 	     },
- 	  
-  	    ["OBJECTIVE"] = { -- Goals for farming and unlocking features
-  	        ["GODHUMAN"] = false, -- Automatically unlock the "Godhuman" fighting style
-  	        ["RACE-CONFIGURE"] = {
-  	            ["RACE"] = {"Human", "Skypiea", "Fishman", "Mink"}, -- List -- "Human", "Skypiea", "Fishman", "Mink"
-  	            ["RACE-LOCK"] = true, -- Automatically change the character race if not in the list
-   	           ["RACE-V3"] = false, -- Automatically upgrade character race to V3 if possible Human, Mink, (Fishman, Ghoul, Cyborg) soon
-  	        },
-  	        ["FRAGMENT"] = 0, -- Limit number of fragments to collect
- 	  
-   	       -- SWORD
-  	        ["CANVANDER"] = false,
- 	         ["BUDDY-SWORD"] = false,
-  	        ["CURSED-DUAL-KATANA"] = false,
-  	        ["SHARK-ANCHOR"] = false,
- 	  
-  	        --GUN
-  	        ["ACIDUM-RIFLE"] = false,
-  	        ["VENOM-BOW"] = false,
-  	        ["SOUL-GUITAR"] = false,
- 	  
-  	        -- AURA
- 	         ["COLOR-HAKI"] = {"Pure Red","Winter Sky","Snow White"}, -- Aura color to craft
-	      },
- 	  
- 	     ["FRUITPURCHASE"] = true, -- Automatically purchase fruits based on priority list
- 	     ["PRIORITYFRUIT"] = {"Yeti-Yeti"
-     	     [1] = "Dragon-Dragon",
-   	       [2] = "Dough-Dough",
-   	       [3] = "Flame-Flame",
-   	       [4] = "Rumble-Rumble",
-   	       [5] = "Human-Human: Buddha",
-  	        [6] = "Dark-Dark",
-	      },
-	   
- 	     ["FPSCAP"] = 30, -- Limit the frame rate to optimize performance
- 	     ["LOWTEXTURE"] = true-- Reduce graphic quality for better performance
-	  }
-	  loadstring(game:HttpGet("https://raw.githubusercontent.com/simple-hubs
+	  loadstring(game:HttpGet("https://raw.githubusercontent.com/LuaAnarchist/GreenZ-Hub/refs/heads/main/KaitunDoughKing.lua"))()
   end
 })
